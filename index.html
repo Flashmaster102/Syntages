@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipe Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form>
+	  <fieldset>
+	  <legend>Στοιχεία</legend>
+	   <label for="name">Προιόν:</label>
+       <input type="text" id="name" name="name" > <br>
+	   <label for="quantity">Ποσότητα (σε kg):</label>
+	   <input type="number" id="quantity" name="quantity" min="0" > <br>
+	   <label for="price">Τιμή kg:</label>
+	   <input type="number" id="price" name="price" min="0"> <br>
+	   <input type="button" id="enter" value="Εισαγωγή">
+	   <input type="reset" value="Καθαρισμός">
+	  </fieldset>
+    </form>
+	<section>
+	  <div id="ingredientsList">Δεν υπάρχουν συστατικά!</div>
+	</section>
+	<script src="https://unpkg.com/currency.js@~2.0.0/dist/currency.min.js"></script>
+	<script src="index.js"></script>
+  </body>
+</html>
