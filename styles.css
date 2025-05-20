@@ -3,91 +3,179 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 body {
-	font-size:23px;
-	display:flex;
+  margin-top: 10px;
+  font-size: 23px;
+  display: flex;
 }
 
 form {
-	padding:15px;
+  padding: 15px;
 }
 
 legend {
-	font-weight: bold;
-	padding:5px;
+  font-weight: bold;
+  padding: 5px;
 }
 
-table,th,td {
-	border:2px solid black;
-	padding:5px;
-	margin-left:auto;
-	margin-right:auto;
+table,
+th,
+td {
+  border: 2px solid black;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 tr:nth-child(even) {
-	background-color:#F5F5F5;
+  background-color: #f5f5f5;
 }
 
 tr:last-child {
-	background-color:#B3E5FC;
-}
-
-#name {
-	margin-left:99px;
-}
-
-#price {
-	margin-left:95px;
+  background-color: #b3e5fc;
 }
 
 #ingredientsList {
-	margin:15px;
+  margin: 15px;
+  /*visibility: hidden;*/
 }
 
+section {
+  margin-left: 15px;
+  padding: 10px;
+  border: solid rgb(33, 174, 37) 2px;
+}
 
-
+#ingredient,
+#recipe {
+  /* visibility: hidden;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}

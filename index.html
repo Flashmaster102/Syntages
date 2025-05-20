@@ -11,26 +11,23 @@
     <section>
       <button type="button" id="insertIngredient">Εισαγωγή υλικού</button>
       <form id="ingredient">
-        <fieldset>
-          <legend>Στοιχεία</legend>
-          <label for="name">Προιόν:</label>
-          <input type="text" id="name" name="name" />
-          <label for="quantity">Βάρος (σε kg):</label>
-          <input type="number" id="quantity" name="quantity" min="0" />
-          <label for="price">Τιμή kg:</label>
-          <input type="number" id="price" name="price" min="0" />
-          <label for="tax">ΦΠΑ:</label>
-          <input type="number" id="tax" name="tax" min="0" max="100" />
-          <input type="button" id="enter" value="Εισαγωγή" />
-          <input type="reset" value="Καθαρισμός" />
-        </fieldset>
+        <label for="name">Προιόν</label>
+        <input type="text" id="name" name="name" required />
+        <label for="price">Τιμή kg</label>
+        <input type="number" id="price" name="price" min="0" required />
+        <label for="tax">ΦΠΑ</label>
+        <input type="number" id="tax" name="tax" min="0" required />
+        <input type="button" id="enter" value="Εισαγωγή" />
+        <input type="reset" value="Καθαρισμός" />
       </form>
     </section>
     <section>
-      <button type="button" id="insertRecipe">Επιλογή συνταγής</button>
+      <button type="button" id="insertRecipe">Εισαγωγή συνταγής</button>
       <form id="recipe">
-        <label for="product">Υλικά</label>
+        <label for="product">Υλικό</label>
         <select name="product" id="product"></select>
+        <label for="quantity">Βάρος (σε kg)</label>
+        <input type="number" id="quantity" name="quantity" min="0" required />
       </form>
       <div id="ingredientsList">Δεν υπάρχουν συστατικά!</div>
     </section>
