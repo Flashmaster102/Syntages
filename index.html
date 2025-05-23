@@ -11,25 +11,29 @@
     <section>
       <button type="button" id="insertIngredient">Εισαγωγή υλικού</button>
       <form id="ingredient">
-        <label for="name">Προιόν</label>
+        <label for="name">Υλικό</label>
         <input type="text" id="name" name="name" required />
         <label for="price">Τιμή kg</label>
         <input type="number" id="price" name="price" min="0" required />
         <label for="tax">ΦΠΑ</label>
         <input type="number" id="tax" name="tax" min="0" required />
-        <input type="button" id="enter" value="Εισαγωγή" />
         <input type="reset" value="Καθαρισμός" />
       </form>
     </section>
     <section>
-      <button type="button" id="insertRecipe">Εισαγωγή συνταγής</button>
+      <button type="button" id="insertRecipe">Εισαγωγή στη συνταγή</button>
       <form id="recipe">
-        <label for="product">Υλικό</label>
+        <label for="product">Επιλογή υλικού</label>
         <select name="product" id="product"></select>
         <label for="quantity">Βάρος (σε kg)</label>
         <input type="number" id="quantity" name="quantity" min="0" required />
+        <input type="reset" value="Καθαρισμός" /><br />
+        <span>Δεν υπάρχουν ακόμη υλικά!</span>
       </form>
-      <div id="ingredientsList">Δεν υπάρχουν συστατικά!</div>
+    </section>
+    <section><div id="oneIngredient">Δεν υπάρχουν υλικα!</div></section>
+    <section>
+      <div id="ingredientsList">Δεν υπάρχουν υλικά!</div>
     </section>
     <script src="https://unpkg.com/currency.js@~2.0.0/dist/currency.min.js"></script>
     <script src="index.js"></script>

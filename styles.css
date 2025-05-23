@@ -132,7 +132,9 @@ table {
 body {
   margin-top: 10px;
   font-size: 23px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 600px 600px;
+  grid-gap: 10px;
 }
 
 form {
@@ -161,11 +163,6 @@ tr:last-child {
   background-color: #b3e5fc;
 }
 
-#ingredientsList {
-  margin: 15px;
-  /*visibility: hidden;*/
-}
-
 section {
   margin-left: 15px;
   padding: 10px;
@@ -174,8 +171,15 @@ section {
 
 #ingredient,
 #recipe {
-  /* visibility: hidden;*/
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+}
+
+#product {
+  visibility: hidden;
+}
+
+span {
+  color: crimson;
 }
